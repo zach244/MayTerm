@@ -30,5 +30,9 @@ public class Holstein {
 vanilla = new WhippedCream(new Cherry(vanilla));
 System.out.println(vanilla.getDescription());
   System.out.println(vanilla.cost());
+Dessert chocolate2 = new Chocolate();
+chocolate2 = new Cherry(new HotFudge(new WhippedCream(chocolate2)));
+System.out.println(chocolate2.getDescription());
+  System.out.println(chocolate2.cost());
  }
 }

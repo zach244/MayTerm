@@ -13,7 +13,8 @@ public class CaesarShiftInputStream extends FilterInputStream
 
  public int read() throws IOException {
   int c = super.read();
- c.UpperCase();
+  if (c >= 0)
+   c++;
 
   return c;
  }

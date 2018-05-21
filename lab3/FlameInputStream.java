@@ -9,8 +9,8 @@ public class FlameInputStream extends FilterInputStream
 
  public int read() throws IOException {
   int c = super.read();
-  if (c >= 0)
-   c++;
+    
+    c = Character.toUpperCase(c);
 
   return c;
  }
