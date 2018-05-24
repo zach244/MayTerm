@@ -5,7 +5,7 @@ public class TestSorter {
 		// TODO Auto-generated method stub
 		String[] elements = {"beta", "chi","alpha","zeta", "nu","mu"};
 		SortFactory factory = new NonRecursive();
-		factory.setFactory("Selection");
+		factory.setFactory("Insertion");
 		
 		SortingAlgorithm algorithm = factory.getAlgorithm();
 		
