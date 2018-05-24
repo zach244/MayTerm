@@ -11,7 +11,9 @@ public abstract class SortFactory {
  public void setFactory(String algorithm) {
   this.algorithm = algorithm;
  }
- 
+ public String getAlgorithmName(){
+     return this.algorithm;
+ }
  /**
   * This must generate the appropriate sorting algorithm
   * according to what was set in setFactory().

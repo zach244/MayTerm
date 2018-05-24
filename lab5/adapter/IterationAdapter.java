@@ -1,7 +1,8 @@
+import java.util.Enumeration;
 import java.util.Iterator;
 
 public class IterationAdapter implements Enumeration{
-    Iterator<E> iterator;
+    Iterator iterator;
 public IterationAdapter(Iterator iterator){
     this.iterator = iterator;
 }

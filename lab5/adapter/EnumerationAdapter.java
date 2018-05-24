@@ -1,6 +1,7 @@
 import java.util.Enumeration;
 import java.util.Iterator;
 
+
 public class EnumerationAdapter implements Iterator{
     Enumeration enumeration;
 
@@ -15,6 +16,6 @@ public class EnumerationAdapter implements Iterator{
         return enumeration.nextElement();
     }
     public void remove(){
-        throw new UnsupportedException();
+        throw new UnsupportedOperationException();
     }
 }
