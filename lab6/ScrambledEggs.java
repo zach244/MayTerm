@@ -1,19 +1,21 @@
 
-public class ScrambledEggs {
-	public void crackEggs(int num) {
-		System.out.println("Cracking " + num + " eggs");
-	}
+public class ScrambledEggs extends EggDish{
 	
-	public void stirEggs() {
+	
+	public void prepare() {
 		System.out.println("Stirring and adding milk to the eggs");
 	}
 	
-	public void cooking() {
+	public void cook() {
 		System.out.println("Scrambling the eggs.");
 	}
 	
-	public void serve() {
-		System.out.println("Placing the eggs on the plate.");
+	boolean saltAndPepperHook(boolean choice){
+		boolean saltPepper = false;
+		if(choice == true){
+			saltPepper = true;
+		}
+		return saltPepper;
 	}
 
 }

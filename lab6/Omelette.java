@@ -1,10 +1,8 @@
 
-public class Omelette {
-	public void crackingEggs(int numOfEggs) {
-		System.out.println("Cracking " + numOfEggs +  "eggs");
-	}
+public class Omelette extends EggDish{
 	
-	public void prepareEggs() {
+	
+	public void prepare() {
 		System.out.println("Stirring the eggs");
 	}
 	
@@ -12,8 +10,5 @@ public class Omelette {
 		System.out.println("Flipping the omelette while cooking");
 	}
 	
-	public void serve() {
-		System.out.println("Putting the eggs on the plate");
-	}
 
 }
