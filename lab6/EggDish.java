@@ -4,7 +4,7 @@ public abstract class EggDish{
         crackingEggs(eggs);
         prepare();
         cook();
-        if(saltAndPepperHook() == true){
+        if(saltAndPepperHook()){
             saltAndPepper();
         }
         serve();
@@ -24,7 +24,7 @@ public abstract class EggDish{
     void saltAndPepper(){
         System.out.println("Adding Salt and Pepper");
     }
-    boolean saltAndPepperHook() {
+     boolean saltAndPepperHook() {
         return true;
        }
 

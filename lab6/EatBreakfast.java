@@ -5,7 +5,7 @@ public class EatBreakfast {
 		scrambled.crackingEggs(2);
 		scrambled.prepare();
 		scrambled.cook();
-		scrambled.saltAndPepperHook(true);
+		scrambled.saltAndPepperHook();
 		scrambled.serve();
 		
 		Omelette omelette = new Omelette();
