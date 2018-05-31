@@ -1,24 +1,14 @@
 
 public class EatBreakfast {
 	public static void main(String[] args) {
-		ScrambledEggs scrambled = new ScrambledEggs();
-		scrambled.crackingEggs(2);
-		scrambled.prepare();
-		scrambled.cook();
-		scrambled.saltAndPepperHook();
-		scrambled.serve();
+		EggDish scrambled = new ScrambledEggs();
+		scrambled.prepareEggs(3);
 		
-		Omelette omelette = new Omelette();
-		omelette.crackingEggs(3);
-		omelette.prepare();
-		omelette.cook();
-		omelette.serve();
+		EggDish omelette = new Omelette();
+		omelette.prepareEggs(2);
 		
-		SunnySide sunny = new SunnySide();
-		sunny.crackingEggs(1);
-		sunny.prepare();
-		sunny.cook();
-		sunny.serve();
+		EggDish sunny = new SunnySide();
+		sunny.prepareEggs(1);
 	}
 
 }

@@ -10,6 +10,16 @@ public class SunnySide   extends EggDish{
 		System.out.println("Cooking the eggs sunny side up.");
 	}
 	
+	public boolean customerWantsSaltPepper(){
+		String answer = getUserInput();
+
+		if(answer.toLowerCase().startsWith("y")){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 	
 
 }

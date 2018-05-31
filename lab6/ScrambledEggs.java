@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class ScrambledEggs extends EggDish{
 	Boolean choice = false;
@@ -10,9 +12,15 @@ public class ScrambledEggs extends EggDish{
 		System.out.println("Scrambling the eggs.");
 	}
 	
-	boolean saltAndPepperHook(){
-		
-		return saltPepper;
-	}
+	public boolean customerWantsSaltPepper(){
+		String answer = getUserInput();
 
+		if(answer.toLowerCase().startsWith("y")){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
 }

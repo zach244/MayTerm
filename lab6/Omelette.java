@@ -10,5 +10,14 @@ public class Omelette extends EggDish{
 		System.out.println("Flipping the omelette while cooking");
 	}
 	
+	public boolean customerWantsSaltPepper(){
+		String answer = getUserInput();
 
+		if(answer.toLowerCase().startsWith("y")){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 }

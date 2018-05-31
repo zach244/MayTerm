@@ -1,12 +1,13 @@
+import java.io.*;
 public abstract class EggDish{
    
     final void prepareEggs(int eggs){
         crackingEggs(eggs);
         prepare();
         cook();
-        if(saltAndPepperHook()){
-            saltAndPepper();
-        }
+       if(customerWantsSaltPepper()){
+        saltAndPepper();
+       }
         serve();
 
 
@@ -21,11 +22,25 @@ public abstract class EggDish{
     abstract void prepare();
     abstract void cook();
    
-    void saltAndPepper(){
+    final void saltAndPepper(){
         System.out.println("Adding Salt and Pepper");
     }
-     boolean saltAndPepperHook() {
-        return true;
+    
+       public boolean customerWantsSaltPepper(){
+           return true;
        }
-
+       final String getUserInput(){
+		String answer = null;
+		System.out.print("Would you like salt and peper with your eggs (y/n)?");
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		try{
+			answer = in.readLine();
+		}catch(IOException ioe){
+			System.err.print("IO Error");
+		}
+		if(answer == null){
+			return "no";
+		}
+		return answer;
+	}
 }
