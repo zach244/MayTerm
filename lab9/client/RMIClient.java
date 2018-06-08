@@ -4,10 +4,11 @@
 
 import java.rmi.*;
 
+
 public class RMIClient 
 {  
    public static void main(String args[]) { 
-       String hostName = "127.0.0.1";
+       String hostName = "10.0.0.214";
        
     try {
       String host = "rmi://" + hostName + "/DateServer";
