@@ -4,8 +4,8 @@ public class NullIterator implements Iterator{
     public boolean hasNext(){
         return false;
     }
-    public E next(){
-        return E;
+    public Object next(){
+        return false;
     }
     public void remove(){
         throw new UnsupportedOperationException();

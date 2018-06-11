@@ -14,7 +14,7 @@ public class HashTable
   public static void main(String[] args) {
     
     Random random = new Random();
-    Object[]  hashTable = new NullIterator[MAX];
+    Object[]  hashTable = new Object[MAX];
     
     NullIterator n = new NullIterator();
     
