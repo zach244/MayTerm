@@ -132,6 +132,7 @@ public class ViewFrame  extends javax.swing.JFrame implements View, ViewObserver
   public void updateView(String message) {
     
     /** This needs to be filled in **/
+    output.setText(message);
     
   }
 }
